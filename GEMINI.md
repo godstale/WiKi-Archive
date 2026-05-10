@@ -1,12 +1,21 @@
 # GEMINI.md
 
-이 파일은 Gemini Agent를 위한 프로젝트 가이드라인입니다.
+Gemini 에이전트를 위한 최적화 지침입니다.
 
-## Gemini를 위한 지침
-- `PROJECT_PURPOSE.md`의 목표를 최우선으로 합니다.
-- Topic별 `HOW-TO-UPDATE.md`를 적극 활용하여 주기적인 업데이트를 수행합니다.
-- `LLM-WiKi` 스킬로 생성된 위키 결과물을 `WiKi-Hub`로 `godstale/WiKi-Archive` 레포지토리에 동기화합니다.
-- 프로젝트 설정 변경 시 `AGENTS.md`, `CLAUDE.md`와 함께 이 파일을 동기화합니다.
+## 1. 운영 전략
+- **장기 컨텍스트 활용:** `PROJECT_PURPOSE.md`의 목표를 모든 작업의 배경 지식으로 유지합니다.
+- **SOP 준수:** `AGENTS.md`에 정의된 통합 운영 절차를 엄격히 따릅니다.
+- **점진적 업데이트:** Topic별 `HOW-TO-UPDATE.md`를 분석하여 자동화된 업데이트 스크립트를 도출하고 실행합니다.
 
-## 자동화 (Cron/Batch)
-- 주기적인 업데이트 작업 시 `HOW-TO-UPDATE.md`의 절차를 자동화된 명령어로 변환하여 실행합니다.
+## 2. 작업 동기화 규칙
+- `AGENTS.md`, `CLAUDE.md`와 이 파일을 프로젝트의 "Single Source of Truth"로 간주합니다.
+- 한 파일의 컨벤션이 변경되면 나머지 두 파일도 즉시 반영하여 에이전트 간 지식 격차를 해소합니다.
+
+## 3. 위키 품질 관리
+- `LLM-WiKi` 스킬을 사용하여 지식의 구조화 및 연결성을 극대화합니다.
+- `WiKi-Hub`를 통해 `godstale/WiKi-Archive` 레포지토리와 항상 최신 상태를 유지합니다.
+
+## 4. 주요 체크리스트
+- [ ] Topic 폴더 내 `wiki/` 폴더 존재 여부 확인
+- [ ] `HOW-TO-UPDATE.md` 파일의 최신화 상태 확인
+- [ ] Git 서브모듈 상태 및 원격지 연결 확인
