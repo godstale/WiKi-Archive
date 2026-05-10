@@ -1,0 +1,6 @@
+[submodule ".agents/skills/LLM-WiKi"]
+	path = .agents/skills/LLM-WiKi
+	url = https://github.com/godstale/LLM-WiKi.git
+[submodule ".agents/skills/WiKi-Hub"]
+	path = .agents/skills/WiKi-Hub
+	url = https://github.com/godstale/WiKi-Hub.git
