@@ -4,6 +4,9 @@ Gemini 에이전트를 위한 실행 가이드입니다. 통합 지침은 `AGENT
 
 ## 1. 운영 전략
 - **SOP 준수:** `.agents/` 폴더 내의 규칙과 메모리를 기반으로 작업합니다.
+- **주제별 관리 (Multi-Topic):** 각 주제는 `[topic-name]/wiki/` 구조로 관리합니다. 이는 `wiki-hub`를 통한 독립적인 주제 공유 및 배포를 위함입니다.
+  - 예시: `restaurants/wiki/`, `travel/wiki/`
+  - 각 주제 폴더 내부의 `wiki/` 폴더가 실제 위키 콘텐츠(entities, sources 등)를 포함합니다.
 - **이력 관리:** 작업 완료 후 `.agents/memory/history.md`에 수행 내용을 요약 기록합니다.
 
 ## 2. 메모리 관리
