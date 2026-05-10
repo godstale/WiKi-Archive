@@ -1,5 +1,7 @@
 
-
+# Project files
+.agents/memory/
+.agents/rules/
 
 # Doc files
 docs/
