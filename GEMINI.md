@@ -1,21 +1,15 @@
 # GEMINI.md
 
-Gemini 에이전트를 위한 최적화 지침입니다.
+Gemini 에이전트를 위한 실행 가이드입니다. 통합 지침은 `AGENTS.md`를 참조하세요.
 
 ## 1. 운영 전략
-- **장기 컨텍스트 활용:** `PROJECT_PURPOSE.md`의 목표를 모든 작업의 배경 지식으로 유지합니다.
-- **SOP 준수:** `AGENTS.md`에 정의된 통합 운영 절차를 엄격히 따릅니다.
-- **점진적 업데이트:** Topic별 `HOW-TO-UPDATE.md`를 분석하여 자동화된 업데이트 스크립트를 도출하고 실행합니다.
+- **SOP 준수:** `.agents/` 폴더 내의 규칙과 메모리를 기반으로 작업합니다.
+- **이력 관리:** 작업 완료 후 `.agents/memory/history.md`에 수행 내용을 요약 기록합니다.
 
-## 2. 작업 동기화 규칙
-- `AGENTS.md`, `CLAUDE.md`와 이 파일을 프로젝트의 "Single Source of Truth"로 간주합니다.
-- 한 파일의 컨벤션이 변경되면 나머지 두 파일도 즉시 반영하여 에이전트 간 지식 격차를 해소합니다.
+## 2. 메모리 관리
+- 오류 발생 시 원인 분석과 해결 과정을 `.agents/memory/error_fixes.md`에 업데이트하여 지능적인 협업을 유지합니다.
+- 복잡한 작업 전에는 `.agents/memory/context.md`를 최신화하여 장기 컨텍스트를 보존합니다.
 
-## 3. 위키 품질 관리
-- `LLM-WiKi` 스킬을 사용하여 지식의 구조화 및 연결성을 극대화합니다.
-- `WiKi-Hub`를 통해 `godstale/WiKi-Archive` 레포지토리와 항상 최신 상태를 유지합니다.
-
-## 4. 주요 체크리스트
-- [ ] Topic 폴더 내 `wiki/` 폴더 존재 여부 확인
-- [ ] `HOW-TO-UPDATE.md` 파일의 최신화 상태 확인
-- [ ] Git 서브모듈 상태 및 원격지 연결 확인
+## 3. 핵심 참조
+- @AGENTS.md: 통합 SOP.
+- @.agents/memory/context.md: 프로젝트 목표 및 현황.
