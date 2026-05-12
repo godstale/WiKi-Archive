@@ -5,7 +5,8 @@
 ## 주제별 위키 (Topics)
 
 - [맛집 (Restaurants)](restaurants/wiki/index.md): 전국 맛집 정보 위키
-- (새 주제 추가 시 `[주제명](topic-name/wiki/index.md)` 형식으로 등록)
+- [AI 레딧 트렌드 (AI Reddit Trends)](ai-reddit-trends/wiki/index.md): 일간 AI 소식 및 트렌드 요약 위키
+
 
 ## 위키 관리 구조
 
