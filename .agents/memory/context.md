@@ -1,15 +1,18 @@
-# GEMINI.md
+# Project Context
 
-Gemini 에이전트를 위한 실행 가이드입니다. 통합 지침은 `AGENTS.md`를 참조하세요.
+## Overview
+WiKi-Archive는 다양한 주제의 정보를 위키 형식으로 정리하고 보존하는 프로젝트입니다. 각 주제는 독립적인 폴더 구조(`[topic]/wiki/`)를 가지며, 자동화된 스크립트를 통해 업데이트됩니다.
 
-## 1. 운영 전략
-- **SOP 준수:** `.agents/` 폴더 내의 규칙과 메모리를 기반으로 작업합니다.
-- **이력 관리:** 작업 완료 후 `.agents/memory/history.md`에 수행 내용을 요약 기록합니다.
+## Active Topics
+1. **Restaurants**: 전국 맛집 정보 (정규화된 데이터 기반)
+2. **AI Reddit Trends**: 일간 AI 관련 레딧 포스트 요약 (7일 보존)
+3. **Daily News**: 주요 언론사 및 구글 뉴스의 헤드라인 리포트 (7일 보존) - **NEW**
 
-## 2. 메모리 관리
-- 오류 발생 시 원인 분석과 해결 과정을 `.agents/memory/error_fixes.md`에 업데이트하여 지능적인 협업을 유지합니다.
-- 복잡한 작업 전에는 `.agents/memory/context.md`를 최신화하여 장기 컨텍스트를 보존합니다.
+## Update Strategy
+- `ai-reddit-trends`와 `daily-news`는 `.agents/scripts/`의 파이썬 스크립트를 사용하여 일간 업데이트를 수행합니다.
+- 7일간의 데이터를 유지하며, 인덱스 파일을 자동으로 갱신합니다.
 
-## 3. 핵심 참조
-- @AGENTS.md: 통합 SOP.
-- @.agents/memory/context.md: 프로젝트 목표 및 현황.
+## Recent Changes (2026-05-12)
+- `daily-news` 주제 추가 및 초기 데이터 생성.
+- `update_daily_news.py` 스크립트 구현.
+- 루트 `index.md`에 `daily-news` 추가.

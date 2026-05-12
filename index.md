@@ -6,6 +6,7 @@
 
 - [맛집 (Restaurants)](restaurants/wiki/index.md): 전국 맛집 정보 위키
 - [AI 레딧 트렌드 (AI Reddit Trends)](ai-reddit-trends/wiki/index.md): 일간 AI 소식 및 트렌드 요약 위키
+- [데일리 뉴스 (Daily News)](daily-news/wiki/index.md): 주요 뉴스 헤드라인 및 리포트 위키
 
 
 ## 위키 관리 구조

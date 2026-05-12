@@ -14,3 +14,10 @@
 - AI-Reddit-Trends 위키 검사 및 수정. index.md를 AI-Reddit-Trends.md로 변경하고 링크 구조를 정규화함. AGENTS.md 및 GEMINI.md에 주제별 격리(Topic Isolation) 지침을 추가함.
 - AI-Reddit-Trends 위키 진입점을 index.md로 복구하여 독립적 토픽 호환성 확보. 개별 리포트의 백링크를 [[index]]로 수정함.
 - 토픽 업데이트 시 HOW-TO-UPDATE.md 지침 준수 룰을 AGENTS.md 및 GEMINI.md에 명문화함.
+
+## 2026-05-12 (Daily News 추가)
+- 새 토픽 'daily-news' 추가 및 구조 생성 (daily-news/wiki/).
+- 연합뉴스 및 구글 뉴스 헤드라인 수집 리포트 생성 (2026-05-12.md).
+- 7일 순환 보관 및 인덱스 업데이트를 위한 .agents/scripts/update_daily_news.py 구현.
+- 루트 index.md 및 HOW-TO-UPDATE.md 가이드 작성.
+
